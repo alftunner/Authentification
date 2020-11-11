@@ -12,39 +12,50 @@ foreach ($lines as $line) {
     $auth[$login] = $password;
 }
 
-//проверка нажата ли галочка (см. суперглобальные массивы PHP)
-if(isset($_REQUEST["check"]))
+//Проверка содержат ли поля ввода данные, а не пустые строки
+if(!empty($_POST["email"]) && !empty($_POST["password"]))
 {
-    $flag = false;
-    //проходимся по auth и разбиваем каждый его элемент на пару ключ(емеил)-значение(пароль)
-    foreach ($auth as $key=>$value)
+    //проверка нажата ли галочка (см. суперглобальные массивы PHP)
+    if(isset($_REQUEST["check"]))
     {
-        //если такая почта есть, выводим шаблоны index.html и same_user.html
-        if($key == $_POST['email']){
+        $flag = false;
+        //проходимся по auth и разбиваем каждый его элемент на пару ключ(емеил)-значение(пароль)
+        foreach ($auth as $key=>$value)
+        {
+            //если такая почта есть, выводим шаблоны index.html и same_user.html
+            if($key == $_POST['email']){
+                include "index.html";
+                include "same_user.html";
+                $flag = true;
+            }
+        }
+        //если такой почты нет, то записываем эту пару в фаил с новой строки и выводим шаблон success.html
+        if($flag == false){
+            $buffer = "{$_POST['email']} {$_POST['password']}";
+            file_put_contents('login.txt', PHP_EOL . $buffer, FILE_APPEND);
+            include "success.html";
+        }
+    }
+    //если галочка не нажата, дальше должно быть понятно исходя из комментариев выше.
+    else{
+        $flag = false;
+        foreach ($auth as $key=>$value)
+        {
+            if($key == $_POST['email'] && $value == $_POST['password']){
+                include "success_auth.html";
+                $flag = true;
+            }
+        }
+        if($flag == false){
             include "index.html";
-            include "same_user.html";
-            $flag = true;
+            include "bad_auth.html";
         }
     }
-    //если такой почты нет, то записываем эту пару в фаил с новой строки и выводим шаблон success.html
-    if($flag == false){
-        $buffer = "{$_POST['email']} {$_POST['password']}";
-        file_put_contents('login.txt', PHP_EOL . $buffer, FILE_APPEND);
-        include "success.html";
-    }
 }
-//если галочка не нажата, дальше должно быть понятно исходя из комментариев выше.
 else{
-    $flag = false;
-    foreach ($auth as $key=>$value)
-    {
-        if($key == $_POST['email'] && $value == $_POST['password']){
-            include "success_auth.html";
-            $flag = true;
-        }
-    }
-    if($flag == false){
-        include "index.html";
-        include "bad_auth.html";
-    }
+    include "index.html";
+    include "bad_auth.html";
 }
+
+
+
