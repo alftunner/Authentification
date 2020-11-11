@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d2f85e-d756-43b4-9d27-42ab175e5ebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.txt" beforeDir="false" afterPath="$PROJECT_DIR$/login.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,12 +26,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jsbevKJh2IAk8z2msmJUpgC1Ox" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -55,6 +58,7 @@
       <updated>1604595846986</updated>
       <workItem from="1604595849019" duration="10626000" />
       <workItem from="1604935724500" duration="1591000" />
+      <workItem from="1605112456081" duration="678000" />
     </task>
     <task id="LOCAL-00001" summary="удалил лишнее">
       <created>1604606104603</created>
@@ -63,25 +67,44 @@
       <option name="project" value="LOCAL" />
       <updated>1604606104603</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Добавил проверку почты через ajax">
+      <created>1605112568741</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605112568741</updated>
+    </task>
+    <task id="LOCAL-00003" summary="удалил лишний фаил test.php">
+      <created>1605112740036</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605112740036</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="удалил лишнее" />
-    <option name="LAST_COMMIT_MESSAGE" value="удалил лишнее" />
+    <MESSAGE value="Добавил проверку почты через ajax" />
+    <MESSAGE value="удалил лишний фаил test.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="удалил лишний фаил test.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="522" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604604740739">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="522" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1604604740739" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1604606103511">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1605112739472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604606103511" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605112739472" />
     <state x="647" y="310" key="Github.ShareDialog" timestamp="1604605967097">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -94,10 +117,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1604597669568" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604606108036">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605112741855">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604606108036" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605112741855" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604605912486">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

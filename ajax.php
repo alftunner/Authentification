@@ -15,7 +15,6 @@ foreach ($lines as $line) {
 //AJAX
 if(isset($_POST['mail']))
 {
-    file_put_contents('login.txt', PHP_EOL . $_POST['mail'], FILE_APPEND);
     $flag = false;
     foreach ($auth as $key=>$value)
         {

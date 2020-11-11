@@ -45,12 +45,11 @@
                                             document.getElementById('emailHelp').innerHTML = this.responseText;
                                             $('#emailHelp').text(this.responseText).css({'color': 'green'});
                                         }
-                                        else
+                                        else if(this.responseText == "Пользователь не зарегистрирован")
                                         {
                                             document.getElementById('emailHelp').innerHTML = this.responseText;
                                             $('#emailHelp').text(this.responseText).css({'color': 'red'});
                                         }
-                                        
                                     }
                                     else alert("Ошибка обмена данными: Данные не получены");
                                 }
