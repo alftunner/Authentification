@@ -21,6 +21,9 @@
                     <input type="email" name="email" value="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text"></div>
                 </div>
+
+                // начинает работать AJAX
+
                 <script>
                     $( "#exampleInputEmail1" ).change(function() {
                         tempEmail = $('#exampleInputEmail1').val();
@@ -59,7 +62,10 @@
 
                         request.send(params);
 	                });
-                </script>    
+                </script>
+
+                //AJAX закончил работать
+
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Password</label>
                     <input type="password" name="password" class="form-control" id="exampleInputPassword1">
